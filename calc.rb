@@ -1,6 +1,4 @@
 def calculator
-
-  # Просим пользователя ввести два числа
   while 1
     while 1
       puts 'First number:'
