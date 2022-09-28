@@ -3,7 +3,7 @@ def calculator
   # Просим пользователя ввести два числа
   while 1
     while 1
-      puts 'Первое число:'
+      puts 'First number:'
       a = STDIN.gets.chomp
       if a !~ /\D/
         a = a.to_i # 2.9 -> 2
@@ -15,7 +15,7 @@ def calculator
 
 
     while 1
-      puts 'Второе число:'
+      puts 'Second number:'
       b = STDIN.gets.chomp
       if b !~ /\D/
         b = b.to_i # the same
@@ -25,10 +25,10 @@ def calculator
       end
     end
 
-      puts 'Выберите операцию (+ - * /)'
+      puts 'Choose an operation (+ - * /)'
       operation = STDIN.gets.chomp
 
-      puts 'Результат:'
+      puts 'Result:'
       case operation
       when '+'
         result = a + b
